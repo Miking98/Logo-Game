@@ -18,7 +18,7 @@ With programming, I've often found that the best way to understand something is 
 
 Users must race against the clock to guess random logos as quickly as possible. Once solved, the logo will be added to the users's "Collection," and a short information panel about the logo's company/organization will be asynchronously loaded from Wikipedia.
 
-This is slightly different than other versions of the Logo Game, in that users can only see one logo at once, can "Pass" logos they don't know, and "win" by solving them as fast as possible. The website also generates a leaderboard of users and statistical rankings for each logo, showing how fast users guess them.
+This is slightly different than other versions of the Logo Game, in that users can only see one logo at once, can "Skip" logos they don't know, and "win" by solving them as fast as possible. The website also generates a leaderboard of users and statistical rankings for each logo, showing how fast users guess them.
 
 ##Images
 
