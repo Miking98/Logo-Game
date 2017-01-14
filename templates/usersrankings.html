@@ -1,0 +1,60 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<?php if ($this->usersModel->checkLogin()): ?>
+				<h2>Your Stats</h2>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="">Rank</th>
+							<th>Username</th>
+							<th>Logos Solved</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken (sec)">ATT</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Per Letter (sec)">ATTPL</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Skips">AS</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Below Average User (sec)">ATTBAU</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Per Letter Below Average User (sec)">ATTPLBAU</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Skips Below Average User">ASBAU</th>
+						</tr>
+					<tbody>
+						<tr>
+							<td><?= $userRank ?></td>
+							<td><?= $userName ?></td>
+							<td><?= $userLogosSolved ?></td>
+							<td><?= $userATT ?></td>
+							<td><?= $userATTPL ?></td>
+							<td><?= $userAS ?></td>
+							<td><?= $userATTBAU ?></td>
+							<td><?= $userATTPLBAU ?></td>
+							<td><?= $userASBAU ?></td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>
+			<?php endif; ?>
+			<h2>Leaderboard</h2>
+			<div class="table-responsive">
+				<table id="usersrankings-table" class="table table-bordered table-hover table-hover-clickable">
+					<thead>
+						<tr>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="">Rank</th>
+							<th>Username</th>
+							<th>Logos Solved</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken (sec)">ATT</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Per Letter (sec)">ATTPL</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Skips">AS</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Below Average User (sec)">ATTBAU</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Time Taken Per Letter Below Average User (sec)">ATTPLBAU</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Average Skips Below Average User">ASBAU</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+
+</div> <!-- /container -->
+

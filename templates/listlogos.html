@@ -1,0 +1,60 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<h1>Completed Logos <small>Collect them all!</small></h1>
+			<hr>
+			<form class="form-inline">
+				<div class="radio">
+					<label class="radio">
+						<input type="radio" name="view" value="table" data-toggle="radio-collapse" target="#listlogos-table-container" checked><strong>Table View</strong>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="radio">
+						<input type="radio" name="view" value="tile"  data-toggle="radio-collapse" target="#listlogos-imagetiles-container"><strong>Tile View</strong>
+					</label>
+				</div>
+			</form>
+			<hr>
+			<div id="listlogos-imagetiles-container" class="display-none">
+				<div id="listlogos-imagetiles" class="imagetiles">
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="/images/genericprofilepic.png">
+						</div>
+						<div class="col-sm-3">
+							<img src="/images/genericprofilepic.png">
+						</div>
+						<div class="col-sm-3">
+							<img src="/images/genericprofilepic.png">
+						</div>
+						<div class="col-sm-3">
+							<img src="/images/genericprofilepic.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="listlogos-table-container" class="table-responsive">
+				<table id="listlogos-table" class="table table-bordered table-hover table-hover-clickable">
+					<thead>
+						<tr>
+							<th>ID #</th>
+							<th>Title</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Time Taken (sec)">TT</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Time Taken Per Letter (sec)">TTPL</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Skips">S</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Time Taken Below Average (sec)">TTBA</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Time Taken Per Letter Below Average (sec)">TTPLBA</th>
+							<th data-container="body" data-toggle="tooltip" data-placement="top" title="Skips Below Average">SBA</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+
+</div> <!-- /container -->
+

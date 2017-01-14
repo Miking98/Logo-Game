@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div class="panel panel-primary">
+				<div class="panel-body">
+					<h1>About</h1>
+					<h2><small>Test your knowledge of brands, companies, and logos in this free, online Logo Game! Compete against friends and players around the world to see who can guess them all.</small></h2>
+					<hr>
+					<p class="lead">- Over 500 logos to guess</p>
+					<p class="lead">- Free to play</p>
+					<p class="lead">- Compete against friends and players around the world</p>
+					<?php if (!$this->usersModel->checkLogin()): ?>
+						<hr>
+						<p class="lead">Play as a guest, or create an account to save your progress:</p>
+						<a href="index"><button type="button" class="btn btn-primary btn-lg">Play as Guest</button></a>
+						<a href="createaccount"><button type="button" class="btn btn-primary btn-lg">Create Account</button></a>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>

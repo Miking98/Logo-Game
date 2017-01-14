@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+				<meta name="keywords" content="myscheduleshare, school, calendar, scheduling, make school schedule, app for school schedule, best school organizer app, school agenda, best school timetable, class scheduling, my class, creating a school schedule, organizer, class, plan, homework, homework log, planner, online, free, app, school calendar template, cal, google calendar, schedule share, share, schedule, high school, middle school, college, share your schedule">		
+				
+		<meta name="description" content="A free, online Logo Game written in pure HTML and Javascript. No Flash or plugins necessary to enjoy the game!">
+		<meta name="keywords" content="logo game, logo quiz, logo, online, free, guessing, solutions, company, brands, corporate, all answers">		
+		
+		<title>The Logo Game</title>
+
+		<link href="/images/logo/logo.png" rel="shortcut icon" type="image/png">
+
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<!--Datatables-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+
+		<link rel="stylesheet" href="/styles/style.css">
+
+
+		<!--Google Analytics Tracking Code-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-84822315-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+
+	<body>
+		<!--NOTIFICATIONS-->
+		<div id="notification-container" class="display-none">
+			<div id="notification">
+			</div>
+		</div>
+		<!-- NAVIGATION -->
+		<nav class="navbar navbar-blue navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/index.php">Play the Logo Game!</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/logos/view">Collection</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rankings <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="/stats/usersRankings">Users</a></li>
+								<li><a href="/stats/logosRankings">Logos</a></li>
+							</ul>
+						</li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<?php if ($this->usersModel->checkAdminStatus()): ?>
+							<li><a href="/logos/add">Upload Logo</a></li>
+						<?php endif; ?>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<?php if ($this->usersModel->checkLogin()): ?>
+							<li><a href="/users/edit">Edit Account</a></li>
+							<li><a href="/logout">Logout</a></li>
+						<?php else: ?>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/users/add">Create Account</a></li>
+						<?php endif; ?>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<!--Container starts-->

@@ -1,0 +1,15 @@
+		<!--Container just ended-->
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<script src="/scripts/functions.js"></script>
+	<script src="/scripts/initializations.js"></script>
+
+	<?php foreach ($this->additionalScripts as $script): ?>
+		<script src=<?= $script ?>></script>
+	<?php endforeach; ?>
+</html>

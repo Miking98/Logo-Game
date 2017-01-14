@@ -1,0 +1,55 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-3 col-xs-1"></div>
+		<div class="col-sm-6 col-xs-10 editaccount panel panel-default">
+			<h3>Edit Account</h3>
+
+			<div class="row">
+				<div class="col-sm-12">	
+					<form action="/users/edit" autocomplete="off" method="POST" role="form" data-toggle="validator">
+
+						<div class="form-group has-feedback">
+							<label for="editaccount-form-username" class="control-label">Username</label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user"></i></span>
+								<input id="editaccount-form-username" type="text" class="form-control" name="username" placeholder="Username" value="<?= preventxss($userName) ?>" required>
+							</div>
+							<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+    						<div class="help-block with-errors"></div>
+						</div>
+
+						<div class="form-group has-feedback">
+							<label for="editaccount-form-email" class="control-label">Email</label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+								<input id="editaccount-form-email" type="email" class="form-control" name="email" placeholder="Email" value="<?= preventxss($userEmail) ?>" required>
+							</div>
+							<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+    						<div class="help-block with-errors"></div>
+						</div>
+
+						<p><a id="editaccount-form-password-container-toggle" class="text-toggle" href="#editaccount-form-password-container" data-toggle="collapse" data-alt-text="Cancel">Change password</a></p>
+						<div id="editaccount-form-password-container" class="form-group has-feedback display-none">
+							<label for="editaccount-form-password" class="control-label">Password</label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input id="editaccount-form-password" type="password" class="form-control" name="password" placeholder="New Password" value="">
+								<span class="input-group-btn">
+									<button id="editaccount-form-password-show" class="btn btn-default" type="button" value="hide">Show</button>
+								</span>
+							</div>
+    						<div class="help-block with-errors"></div>
+						</div>
+
+
+						<button class="btn btn-lg btn-primary btn-block" type="submit">Edit</button>
+					</form>
+				</div>
+			</div>
+
+		<div class="col-sm-3 col-xs-1"></div>	 
+	</div>
+
+</div> <!-- /container -->
+
